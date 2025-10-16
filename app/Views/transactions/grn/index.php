@@ -1,3 +1,6 @@
+
+<?= $this->extend('layouts/main') ?>
+<?= $this->section('content') ?>
 <h1>Goods Receipts (GRN)</h1>
 
 <?php if(session()->getFlashdata('success')): ?>
@@ -47,3 +50,5 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+
+<?= $this->endSection() ?>
